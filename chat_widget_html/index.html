@@ -6,8 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
   </head>
   <body>
-    <div class="chat_icon"></div>
+    <div id="chat-window">
+      <div class="chat-header-container">
+        <div class= "chat-header">
+          <div class="chat-title"> Chat Bot</div>
+          <div class="header-elements" onclick="openChatWindow()">  <img src="assets/close_icon.svg"></div>
+        </div>
+      </div>
+    <div class="chat-conv">
+      <div class="chat-conversations">
+        hello
+      </div>
+    </div>
+    <div class="text-box"> <input type="text" ></div>
+  </div>
+    <div id="chat_icon" onclick="openChatWindow()"></div>
   </body>
 </html>
