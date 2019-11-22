@@ -42,5 +42,40 @@
 }
 .chat-conv {
 	height: 80%;
-	border-bottom: 1px solid black;
+	/* border-bottom: 1px solid black;
+	border-bottom-left-radius: .4rem;
+	border-bottom-right-radius: .4rem; */
+}
+
+.text-box {
+	height: 10%;
+	background: indianred;
+}
+
+.Input-text {
+	display: block;
+	margin: 0;
+	padding: var(--inputPaddingV) var(--inputPaddingH);
+	width: 90%;
+	font-family: inherit;
+	font-size: var(--inputFontSize);
+	font-weight: inherit;
+	line-height: var(--inputLineHeight);
+	border: none;
+	border-radius: 0.4rem;
+	transition: box-shadow var(--transitionDuration);
+	height: 100%;
+	background: indianred;
+	float: left;
+}
+
+.Input-text::placeholder {
+	color: #b0bec5;
+}
+
+.send-button {
+	width: 30px;
+	height: 40px;
+	float: right;
+	margin-right: 5px;
 }
