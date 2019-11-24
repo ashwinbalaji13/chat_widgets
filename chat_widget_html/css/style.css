@@ -105,8 +105,11 @@
 .received-message {
   max-width: 75%;
   padding-right: 8px;
-
+  /* width: 100%; */
   float: left;
+  clear: both;
+  display: block;
+  position: relative;
 }
 .received-text {
   background: wheat;
@@ -127,6 +130,7 @@
   margin-top: 5px;
   float: right;
   padding-right: 8px;
+  clear: both;
 }
 .user-text {
   background: plum;

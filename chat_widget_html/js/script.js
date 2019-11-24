@@ -1,13 +1,5 @@
 let active = false;
 function openChatWindow() {
-  // if (active) {
-  // 	document.getElementById('chat-window').style.display = 'none';
-  // } else {
-  // 	document.getElementById('chat-window').style.display = 'visible';
-  // }
-  // console.log(active);
-
-  // active = !active;
   var currentstate = document.getElementById("chat-window").style.visibility;
   //Make newstate the opposite of the current state.
   var newstate = currentstate == "hidden" ? "visible" : "hidden";
@@ -29,4 +21,35 @@ window.onload = function() {
   // document.getElementById('chat_icon').addEventListener('click', function() {
   // 	//Get current state of CSS display property.
   // });
+};
+
+const userAction = async () => {
+  let user_message = $("#input").val();
+  $("#input").val("");
+  //   console.log(myJson);
+  $(".chats").append(
+    $(`
+  <div class="user-message">
+	<div class="user-text">
+	  <strong>User</strong><br />
+	  ${user_message}
+	</div>
+	<div class="user-message-info">user at 1.20 p.m</div>
+  </div>`)
+  );
+  const response = await fetch("https://d6d1d083.ngrok.io");
+  const myJson = await response.json(); //extract JSON from the http response
+  console.log(myJson);
+  $(".chats").append(
+    $(` <div class="received-message">
+  <div class="received-text">
+	<strong>Bot</strong><br />
+
+	yayyy
+  </div>
+  <div class="message-info">Bot at 1.20 p.m</div>
+</div>
+`)
+  );
+  // do something with myJson
 };
