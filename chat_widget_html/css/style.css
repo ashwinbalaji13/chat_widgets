@@ -102,27 +102,46 @@
   background: grey;
   border-radius: 10px;
 }
+.received-message {
+  max-width: 75%;
+  padding-right: 8px;
 
+  float: left;
+}
 .received-text {
-  background: grey;
+  background: wheat;
   border-radius: 0.4rem;
-  padding: 2px;
-  width: 75%;
+  padding: 4px 6px 4px 6px;
+  /* width: 75%; */
 }
 .message-info {
-  color: #777;
+  display: block;
+  color: rgb(168, 167, 167);
   display: block;
   font-size: 12px;
   padding-left: 8px;
+  float: right;
+  /* width: 50%; */
 }
 .user-message {
   margin-top: 5px;
   float: right;
+  padding-right: 8px;
 }
 .user-text {
-  background: grey;
+  background: plum;
   border-radius: 0.4rem;
-  padding: 2px;
+  padding: 4px 6px 4px 6px;
   width: 75%;
   float: right;
+}
+
+.user-message-info {
+  color: #777;
+  display: block;
+  font-size: 12px;
+  padding-left: 8px;
+  /* margin: 25%; */
+  float: right;
+  margin-right: 6px;
 }
